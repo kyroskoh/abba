@@ -95,7 +95,7 @@ class @Abba
     options.control = true
     @variant(name, options, callback)
 
-  continue: =>
+  previous: =>
     # Use the same variant as before, don't record anything
     if variant = @getPreviousVariant()
       @useVariant(variant)
