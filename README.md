@@ -107,7 +107,7 @@ In the case above, the Control will be invoked 20 times more often than the othe
 
 ### Flow control
 
-You can continue a previously started test using `continue()`.
+You can continue a previously started test using `previous()`.
 
     Abba('My Checkout')
       .control()
@@ -117,9 +117,9 @@ You can continue a previously started test using `continue()`.
       .variant('Variant 2', function(){
         $('#test').text('Variant 2 was chosen!');
       })
-      .continue();
+      .previous();
 
-Nothing will be recorded if you call `continue()` instead of `start()`. If a variant hasn't been chosen previously, nothing will be executed.
+Nothing will be recorded if you call `previous()` instead of `start()`. If a variant hasn't been chosen previously, nothing will be executed.
 
 You can reset tests using `reset()`.
 
